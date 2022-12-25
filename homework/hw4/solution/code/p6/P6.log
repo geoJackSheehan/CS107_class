@@ -1,0 +1,33 @@
+2022-10-07T15:40:07.1261189Z Requested labels: ubuntu-latest
+2022-10-07T15:40:07.1261738Z Job defined at: CS107/faw093/.github/workflows/P6.yml@refs/heads/hw4
+2022-10-07T15:40:07.1261988Z Waiting for a runner to pick up this job...
+2022-10-07T15:40:07.4009537Z Job is about to start running on the runner: ip-10-37-244-116 (enterprise)
+2022-10-07T15:40:12.7829028Z Current runner version: '2.289.3'
+2022-10-07T15:40:12.7839859Z Runner name: 'ip-10-37-244-116'
+2022-10-07T15:40:12.7840413Z Runner group name: 'Default'
+2022-10-07T15:40:12.7841116Z Machine name: 'ip-10-37-244-116'
+2022-10-07T15:40:12.7844427Z ##[group]GITHUB_TOKEN Permissions
+2022-10-07T15:40:12.7845316Z Actions: write
+2022-10-07T15:40:12.7845649Z Checks: write
+2022-10-07T15:40:12.7846048Z Contents: write
+2022-10-07T15:40:12.7846394Z Deployments: write
+2022-10-07T15:40:12.7846745Z Discussions: write
+2022-10-07T15:40:12.7847076Z Issues: write
+2022-10-07T15:40:12.7847350Z Metadata: read
+2022-10-07T15:40:12.7847679Z Packages: write
+2022-10-07T15:40:12.7848066Z Pages: write
+2022-10-07T15:40:12.7848356Z PullRequests: write
+2022-10-07T15:40:12.7849268Z RepositoryProjects: write
+2022-10-07T15:40:12.7849669Z SecurityEvents: write
+2022-10-07T15:40:12.7849984Z Statuses: write
+2022-10-07T15:40:12.7850376Z ##[endgroup]
+2022-10-07T15:40:12.7855754Z Secret source: Actions
+2022-10-07T15:40:12.7856434Z Prepare workflow directory
+2022-10-07T15:40:12.9062353Z Prepare all required actions
+2022-10-07T15:40:13.1399310Z ##[group]Run date && hostname
+2022-10-07T15:40:13.1399792Z [36;1mdate && hostname[0m
+2022-10-07T15:40:13.1451850Z shell: /usr/bin/bash -e {0}
+2022-10-07T15:40:13.1452293Z ##[endgroup]
+2022-10-07T15:40:13.2078235Z Fri Oct  7 11:40:13 EDT 2022
+2022-10-07T15:40:13.2078928Z ip-10-37-244-116
+2022-10-07T15:40:13.2383570Z Cleaning up orphan processes

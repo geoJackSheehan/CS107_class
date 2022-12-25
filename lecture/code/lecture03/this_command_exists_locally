@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# File       : this_command_exists_locally
+# Description: Simple scripted command (not in PATH environment variable)
+# Copyright 2022 Harvard University. All Rights Reserved.
+echo "You have executed $0"
+exit 0

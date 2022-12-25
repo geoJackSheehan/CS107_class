@@ -1,0 +1,51 @@
+# This is a practice workflow for a simple GitHub action in HW4 P6
+# For additional reading see: https://docs.github.com/en/actions
+name: HW4 Continuous Integration
+
+# Controls when the workflow will run
+on:
+  push:
+    branches:
+      - hw4
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
+# For more on jobs:
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobs
+jobs:
+  # Job ID
+  my_first_ci_job:
+    # Name/description of the job
+    name: Your first CI job configuration for HW4 P6
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    # For more on steps:
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps
+    steps:
+      - name: Running Bash command to get date and the hostname we are running on
+        run: date && hostname
+
+  test_complex:
+    # Name/description of the job
+    name: Test Python implementation of complex numbers
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job.
+    # For more on steps:
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idsteps
+    steps:
+      # Check out your repository under $GITHUB_WORKSPACE (job needs access to it)
+      # See: https://github.com/actions/checkout
+      - uses: actions/checkout@v3
+
+      # Enable Python environment in your CI container
+      # See: https://github.com/actions/setup-python
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'  # let's use a recent version
+
+      - name: Install dependencies
+        run: python -m pip install pytest
+
+      - name: Run complex number test suite
+        run: cd homework/hw4 && pytest

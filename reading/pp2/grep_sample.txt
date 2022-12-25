@@ -1,0 +1,13 @@
+aabb
+abc
+aaabbbccc
+aa
+bb
+-a
+
+
+
+
+
+
+

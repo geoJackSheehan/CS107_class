@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# File       : my_exec
+# Description: Shell script example from lecture slides
+# Copyright 2022 Harvard University. All Rights Reserved.
+
+echo "Script $0 running inside $PWD"
+echo "The following arguments were given:"
+for arg in "$@"; do
+    echo $arg
+done
+exit 0
